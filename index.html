@@ -178,10 +178,13 @@
     }
 
     .face-text {
+      width: 100%;
       max-width: 100%;
+      min-width: 0;
       margin: 0;
       text-align: center;
       word-break: keep-all;
+      overflow-wrap: anywhere;
       white-space: pre-line;
       line-height: 1.38;
       font-weight: 1000;
@@ -195,6 +198,8 @@
       justify-content: center;
       gap: 16px;
       width: 100%;
+      min-width: 0;
+      max-width: 100%;
     }
 
     .memory-guide {
@@ -319,6 +324,7 @@
       place-items: center;
       padding: 28px 22px;
       overflow-y: auto;
+      overflow-x: hidden;
       overscroll-behavior: contain;
       background:
         radial-gradient(circle at 88% 12%, rgba(0,168,232,.22) 0 42px, transparent 44px),
